@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: Jackpon
 subtitle:
-description: hello world
-author: Jack
+description: "A young idler, an old beggar!"
+author: Jackpon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
@@ -121,6 +121,7 @@ menu:
   #about: /about/
   archives: /archives/
   tags: /tags/
+  search: /search.xml
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
