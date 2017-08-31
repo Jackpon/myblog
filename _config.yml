@@ -6,7 +6,7 @@
 # Site
 title: Jackpon
 subtitle:
-description: "A young idler, an old beggar!"
+description: "a young idler, an old beggar !"
 author: Jackpon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -121,7 +121,7 @@ menu:
   #about: /about/
   archives: /archives/
   tags: /tags/
-  search: /search.xml
+  #search: 
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
