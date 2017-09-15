@@ -15,7 +15,7 @@ _layouts：这文件夹里面存放你每个页面的设计，一般有default.h
 _includes：这个文件夹里的的内容将会通用到你博客每个页面，起到一种便利的作用；
 _posts：这里面装的就是你的博文啦，记住，要用markdown语法写，要不上传会失败的。
 ### 2. git clone到你本地，修改一下文件；
-### 3. 修改_config.yml、README.md和_posts；
+### 3. 修改_config.yml、README.md和_posts；（具体修改网站：http://theme-next.simpleyyt.com/getting-started.html）
 ### 4. 最后一步，将该项目git push到你的项目
 
 ### 补充：对于git的基本操作如果不熟悉可以看看我在知乎的一篇文章——Git入门操作（https://www.zhihu.com/people/Jackpon/posts ）我的Gitblog上也有；
