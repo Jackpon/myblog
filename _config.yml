@@ -217,7 +217,7 @@ social:
   #LinkLabel: Link
   GitHub: https://github.com/Jackpon
   zhihu: https://www.zhihu.com/people/Jackpon/activities
-
+  404公益: 404.html
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -229,6 +229,7 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   zhihu: joomla
+  404公益: joomla
   #Twitter: twitter
   #Weibo: weibo
 
@@ -355,7 +356,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -572,7 +573,7 @@ exturl: false
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: false
+use_motion: true
 
 # Fancybox
 fancybox: true
