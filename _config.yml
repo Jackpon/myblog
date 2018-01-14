@@ -217,7 +217,7 @@ social:
   #LinkLabel: Link
   GitHub: https://github.com/Jackpon
   zhihu: https://www.zhihu.com/people/Jackpon/activities
-  404公益: 404.html
+  404公益@宝贝回家: 404.html
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -229,7 +229,7 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   zhihu: joomla
-  404公益: joomla
+  404公益@宝贝回家: child
   #Twitter: twitter
   #Weibo: weibo
 
@@ -376,7 +376,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: ea13fa2dc2aa892b0c36fe0fbc9d067d
 
 # Duoshuo ShortName
 #duoshuo_shortname:
