@@ -218,6 +218,7 @@ social:
   GitHub: https://github.com/Jackpon
   zhihu: https://www.zhihu.com/people/Jackpon/activities
   404公益@宝贝回家: 404.html
+  Mkdocs：site/index.html
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -230,6 +231,7 @@ social_icons:
   GitHub: github
   zhihu: joomla
   404公益@宝贝回家: child
+  Mkdocs：joomla
   #Twitter: twitter
   #Weibo: weibo
 
