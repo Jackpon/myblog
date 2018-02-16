@@ -218,7 +218,7 @@ social:
   GitHub: https://github.com/Jackpon
   zhihu: https://www.zhihu.com/people/Jackpon/activities
   404公益@宝贝回家: 404.html
-  Mkdocs: site/index.html
+  
   
 # Social Links Icons
 # Icon Mapping:
@@ -232,7 +232,6 @@ social_icons:
   GitHub: github
   zhihu: joomla
   404公益@宝贝回家: child
-  Mkdocs: joomla
   #Weibo: weibo
 
 
