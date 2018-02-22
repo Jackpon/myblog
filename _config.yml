@@ -216,9 +216,9 @@ font:
 social:
   #LinkLabel: Link
   GitHub: https://github.com/Jackpon
-  zhihu: https://www.zhihu.com/people/Jackpon/activities
+  ZhiHu: https://www.zhihu.com/people/Jackpon/activities
   404公益@宝贝回家: 404.html
-  
+  ACM: site/
   
 # Social Links Icons
 # Icon Mapping:
@@ -230,8 +230,9 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  zhihu: joomla
+  ZhiHu: joomla
   404公益@宝贝回家: child
+  ACM: drupal
   #Weibo: weibo
 
 
