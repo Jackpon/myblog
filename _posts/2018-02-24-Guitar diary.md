@@ -1,5 +1,5 @@
 ---
-title: 吉他 mine ! mine !
+title: 吉他mine!mine!
 categories: 杂感
 - 
 tags: guitar
