@@ -1,9 +1,9 @@
 ---
 title: 吉他 mine mine
-categories: 杂感
-- 
-tags: guitar
-- 
+categories: 
+- 杂感
+tags: 
+- guitar
 updated: 2018-02-24
 ---
 
