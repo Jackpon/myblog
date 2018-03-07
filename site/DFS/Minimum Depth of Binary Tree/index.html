@@ -523,16 +523,11 @@
           <div role="main">
             <div class="section">
               
-                <pre><code>/*
-111. Minimum Depth of Binary Tree
-
-Given a binary tree, find its minimum depth.
-
-The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-题意：求树的最浅深度
-*/
-
-/**
+                <p><strong>111. Minimum Depth of Binary Tree</strong></p>
+<p>Given a binary tree, find its minimum depth.
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p>
+<p>题意：求树的最浅深度</p>
+<pre><code>/**
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
@@ -541,13 +536,12 @@ The minimum depth is the number of nodes along the shortest path from the root n
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-
-/*
-思路：
+</code></pre>
+<p><strong>思路</strong>：
     与算树的深度思路一样，需要处理的是单节点和双节点
     单节点时： 取最深子树+1
-    双节点时： 取最浅子树+1
-*/
+    双节点时： 取最浅子树+1</p>
+<pre><code>
 class Solution {
 public:
     int minDepth(TreeNode* root) {

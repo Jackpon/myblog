@@ -523,9 +523,8 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿/*
-643. Maximum Average Subarray I</p>
-<p>Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. 
+                <p>﻿<strong>643. Maximum Average Subarray I</strong></p>
+<p>Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value.
 And you need to output the maximum average value.</p>
 <p>Example 1:
 Input: [1,12,-5,-6,50,3], k = 4
@@ -533,8 +532,7 @@ Output: 12.75
 Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
 Note:
 1 &lt;= k &lt;= n &lt;= 30,000.
-Elements of the given array will be in the range [-10,000, 10,000].
-*/</p>
+Elements of the given array will be in the range [-10,000, 10,000].</p>
 <pre><code>//题意大致是：给定一个长度为n的数组以及k，求最大的连续子数组的平均值。
 //(1)下面的代码思路是对的，但是运行数据很多的数组会超时，效率不高
 class Solution {
@@ -556,7 +554,7 @@ class Solution {
         value=Math.max(value,sum1);
         sum1=0;
         ++j;
-     } 
+     }
         return value/k;
     }
 }

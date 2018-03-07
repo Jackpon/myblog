@@ -523,9 +523,8 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿/*
-414. Third Maximum Number</p>
-<p>Given a non-empty array of integers, return the third maximum number in this array. 
+                <p>﻿<strong>414. Third Maximum Number</strong></p>
+<p>Given a non-empty array of integers, return the third maximum number in this array.
 If it does not exist, return the maximum number. The time complexity must be in O(n).</p>
 <p>Example 1:
 Input: [3, 2, 1]
@@ -539,15 +538,14 @@ Explanation: The third maximum does not exist, so the maximum (2) is returned in
 Input: [2, 2, 3, 1]
 Output: 1
 Explanation: Note that the third maximum here means the third maximum distinct number.
-Both numbers with value 2 are both considered as second maximum.
-*/</p>
+Both numbers with value 2 are both considered as second maximum.</p>
 <pre><code>public int thirdMax(int[] nums) {
         Arrays.sort(nums);
         int count=0,value=nums[0];
 
         if (nums.length&lt;3) {
 
-            for (int i = 0; i &lt; nums.length; i++) 
+            for (int i = 0; i &lt; nums.length; i++)
                 value=Math.max(value, nums[i]);
 
         }else {
@@ -558,7 +556,7 @@ Both numbers with value 2 are both considered as second maximum.
                     if (count==2) {
                         value=nums[i-1];
                         break;
-                    } 
+                    }
                 }
             }
             if(count&lt;2)

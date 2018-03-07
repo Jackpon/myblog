@@ -436,9 +436,6 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#_1">题意：</a></li>
-                
-            
             </ul>
         
     </li>
@@ -526,18 +523,15 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-34. Search for a Range</p>
+                <p><strong>34. Search for a Range</strong></p>
 <p>Given an array of integers sorted in ascending order, find the starting and ending position of a given target value.</p>
 <p>Your algorithm's runtime complexity must be in the order of O(log n).</p>
 <p>If the target is not found in the array, return [-1, -1].</p>
 <p>For example,
 Given [5, 7, 7, 8, 8, 10] and target value 8,
-return [3, 4].</p>
-<h1 id="_1">题意：</h1>
-<pre><code>    找到数组nums中值等于target的第一个和最后一个
-</code></pre>
-<p>*/</p>
+return [3, 4].
+<strong>题意：</strong>
+        找到数组nums中值等于target的第一个和最后一个</p>
 <pre><code>public int[] searchRange(int[] nums, int target) {
         int a[]={-1,-1};
         int i = 0, j = nums.length-1;
@@ -550,20 +544,20 @@ return [3, 4].</p>
 
             if(nums[j] != target)
                 --j;
-            else 
+            else
                 status2 =true;
         }
         if(i&lt;=j &amp;&amp; status1){
             a[0] = i;
             a[1] = j;
         }
-        return a;   
+        return a;
     }
 /*
 List转为int(拓展)
-LinkedList&lt;Integer&gt; linkedList = new LinkedList&lt;&gt;();    
+LinkedList&lt;Integer&gt; linkedList = new LinkedList&lt;&gt;();
         int []a = new int[linkedList.size()];
-        for (int i = 0; i &lt; linkedList.size(); i++) 
+        for (int i = 0; i &lt; linkedList.size(); i++)
             a[i] = linkedList.get(i);
 
 

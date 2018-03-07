@@ -320,9 +320,6 @@
                 <li class="toctree-l3"><a href="#_1">思路：</a></li>
                 
             
-                <li class="toctree-l3"><a href="#_2">思路：</a></li>
-                
-            
             </ul>
         
     </li>
@@ -529,21 +526,18 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-169. Majority Element</p>
-<p>Given an array of size n, find the majority element. 
+                <p><strong>169. Majority Element</strong></p>
+<p>Given an array of size n, find the majority element.
 The majority element is the element that appears more than ⌊ n/2 ⌋ times.</p>
 <p>You may assume that the array is non-empty and the majority element always
  exist in the array.</p>
-<h1 id="_1">思路：</h1>
-<pre><code>利用set先过滤掉重复元素并将set转换为数组a[]，两层for循环统计数组a[]各元素出现
-次数，最后找出出现次数最多的元素即可
-</code></pre>
-<p>*/</p>
+<p><strong>思路：</strong>
+    利用set先过滤掉重复元素并将set转换为数组a[]，两层for循环统计数组a[]各元素出现
+    次数，最后找出出现次数最多的元素即可</p>
 <pre><code>public int majorityElement(int[] nums) {
     //利用set先过滤掉重复元素并将set转换为数组a[]
     Set&lt;Integer&gt; set = new LinkedHashSet&lt;&gt;();
-    for (int i = 0; i &lt; nums.length; i++) 
+    for (int i = 0; i &lt; nums.length; i++)
         set.add(nums[i]);
     Integer []a = new Integer[set.size()];
     set.toArray(a);
@@ -552,14 +546,14 @@ The majority element is the element that appears more than ⌊ n/2 ⌋ times.</p
     int []sum = new int[set.size()];
     for (int i = 0; i &lt; a.length; i++) {
          k=0;
-        for (int j = 0; j &lt; nums.length; j++) 
-            if (a[i] == nums[j]) 
+        for (int j = 0; j &lt; nums.length; j++)
+            if (a[i] == nums[j])
                 k++;
          sum[z++] = k;
     }
     //最后找出出现次数最多的元素并return
     int value=0;
-    for (int i = 0; i &lt; sum.length; i++) 
+    for (int i = 0; i &lt; sum.length; i++)
         if(sum[i]&gt;value) {
             value = sum[i];
             z = i;
@@ -570,12 +564,12 @@ The majority element is the element that appears more than ⌊ n/2 ⌋ times.</p
 
 <p>/*
 下面是获赞最多的代码</p>
-<h1 id="_2">思路：</h1>
+<h1 id="_1">思路：</h1>
 <pre><code>先把major设置为num[0]，遍历比较是否等于major
 是的，count++；否则count--，如果count==0，
 说明num[i]出现次数大于原先的major，所以替换
 </code></pre>
-<p>*/ </p>
+<p>*/</p>
 <pre><code>public int majorityElement(int[] num) {
     int major=num[0], count = 1;
     for(int i=1; i&lt;num.length;i++){

@@ -523,17 +523,15 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-268. Missing Number</p>
-<p>Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, 
+                <p><strong>268. Missing Number</strong></p>
+<p>Given an array containing n distinct numbers taken from 0, 1, 2, ..., n,
 find the one that is missing from the array.</p>
 <p>For example,
 Given nums = [0, 1, 3] return 2.</p>
 <p>Note:
-Your algorithm should run in linear runtime complexity. 
+Your algorithm should run in linear runtime complexity.
 Could you implement it using only constant extra space complexity?</p>
-<p>大意就是在{0, 1, 2, ..., n}找出遗失的数字，如果没有遗失return n+1；
-*/</p>
+<p>大意就是在{0, 1, 2, ..., n}找出遗失的数字，如果没有遗失return n+1；</p>
 <pre><code>//二分搜索
 public int missingNumber(int[] nums) {
     Arrays.sort(nums);

@@ -523,26 +523,20 @@
           <div role="main">
             <div class="section">
               
-                <pre><code>/*
-118. Pascal's Triangle
-
-Given numRows, generate the first numRows of Pascal's triangle.
-
-For example, given numRows = 5,
-Return
-
-[
+                <p><strong>118. Pascal's Triangle</strong></p>
+<p>Given numRows, generate the first numRows of Pascal's triangle.</p>
+<p>For example, given numRows = 5,
+Return</p>
+<pre><code>[
      [1],
     [1,1],
    [1,2,1],
   [1,3,3,1],
  [1,4,6,4,1]
 ]
-
-*/
-
-//该题算是中等难度，主要考察对List的使用，最叫人拍手叫绝在：j&lt;row.size()-1
-public List&lt;List&lt;Integer&gt;&gt; generate(int numRows) {
+</code></pre>
+<p>//该题算是中等难度，主要考察对List的使用，最叫人拍手叫绝在：<code>j&lt;row.size()-1</code></p>
+<pre><code>public List&lt;List&lt;Integer&gt;&gt; generate(int numRows) {
     List&lt;List&lt;Integer&gt;&gt; allrows = new ArrayList&lt;List&lt;Integer&gt;&gt;();
     ArrayList&lt;Integer&gt; row = new ArrayList&lt;Integer&gt;();
     for(int i=0;i&lt;numRows;i++)
@@ -554,25 +548,18 @@ public List&lt;List&lt;Integer&gt;&gt; generate(int numRows) {
     }
     return allrows;
 }
-
-
-/*
-119. Pascal's Triangle II
-
-Given an index k, return the kth row of the Pascal's triangle.
-
-For example, given k = 3,
-Return [1,3,3,1].
-
-Note:
-Could you optimize your algorithm to use only O(k) extra space?
-*/
-
-public List&lt;Integer&gt; getRow(int rowIndex) {
+</code></pre>
+<p><strong>119. Pascal's Triangle II</strong></p>
+<p>Given an index k, return the kth row of the Pascal's triangle.</p>
+<p>For example, given k = 3,
+Return [1,3,3,1].</p>
+<p>Note:
+Could you optimize your algorithm to use only O(k) extra space?</p>
+<pre><code>public List&lt;Integer&gt; getRow(int rowIndex) {
     List&lt;Integer&gt; row = new ArrayList&lt;Integer&gt;();
     for (int i = 0; i &lt;= rowIndex; i++) {
         row.add(0,1);
-        for (int j = 1; j &lt; row.size()-1; j++) 
+        for (int j = 1; j &lt; row.size()-1; j++)
             row.set(j,row.get(j) + row.get(j+1));
     }
     return row;

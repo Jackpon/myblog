@@ -523,8 +523,7 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-729. My Calendar I</p>
+                <p><strong>729. My Calendar I</strong></p>
 <p>Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.</p>
 <p>Your class will have the method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start &lt;= x &lt; end.</p>
 <p>A double booking happens when two events have some non-empty intersection (ie., there is some time that is common to both events.)</p>
@@ -535,20 +534,19 @@ MyCalendar();
 MyCalendar.book(10, 20); // returns true
 MyCalendar.book(15, 25); // returns false
 MyCalendar.book(20, 30); // returns true
-Explanation: 
+Explanation:
 The first event can be booked.  The second can't because time 15 is already booked by another event.
-The third event can be booked, as the first event takes every time less than 20, but not including 20.
-*/</p>
+The third event can be booked, as the first event takes every time less than 20, but not including 20.</p>
 <pre><code>// Time Limit Exceeded
 class MyCalendar {
     ArrayList&lt;Integer&gt; list;
     public MyCalendar() {
-       list = new ArrayList&lt;&gt;(); 
+       list = new ArrayList&lt;&gt;();
     }
 
     public boolean book(int start, int end) {
         boolean status =false;
-        for (int i = start; i &lt; end; i++) 
+        for (int i = start; i &lt; end; i++)
             if(list.contains(i))
                 status = true;
         for (int i = start; i &lt; end &amp;&amp; !status; i++) {
@@ -564,7 +562,7 @@ class MyCalendar {
 class MyCalendar {
     int []a;
     public MyCalendar() {
-       a = new int[2]; 
+       a = new int[2];
     }
 
     public boolean book(int start, int end) {
@@ -592,7 +590,7 @@ class MyCalendar {
 class MyCalendar {
     ArrayList&lt;Integer[]&gt; list;
     public MyCalendar() {
-       list = new ArrayList&lt;&gt;(); 
+       list = new ArrayList&lt;&gt;();
     }
 
     public boolean book(int start, int end) {

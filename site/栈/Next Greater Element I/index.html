@@ -188,9 +188,6 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#_1">题意：</a></li>
-                
-            
             </ul>
         
     </li>
@@ -526,19 +523,16 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-496. Next Greater Element I</p>
+                <p><strong>496. Next Greater Element I</strong></p>
 <p>You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements
  are subset of nums2. Find all the next greater numbers for nums1's elements in the
   corresponding places of nums2.
 The Next Greater Number of a number x in nums1 is the first greater number to its 
 right in nums2. If it does not exist, output -1 for this number.</p>
-<h1 id="_1">题意：</h1>
-<pre><code>给定两个数组（没有重复）nums1 和 nums2 ,nums1 是nums2的子集。
-找到nums1中每个元素的在nums2中的下一个比其大的值。
-nums1中的x的下一个大的值是该数字x在nums2中，右边的比其大的一个值。如果不存在，返回-1。
-</code></pre>
-<p>*/</p>
+<p><strong>题意</strong>：
+    给定两个数组（没有重复）nums1 和 nums2 ,nums1 是nums2的子集。
+    找到nums1中每个元素的在nums2中的下一个比其大的值。
+    nums1中的x的下一个大的值是该数字x在nums2中，右边的比其大的一个值。如果不存在，返回-1。</p>
 <pre><code>//直接暴力枚举
 public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
     int a[] =new int[nums1.length];

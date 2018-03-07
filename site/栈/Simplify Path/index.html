@@ -202,9 +202,6 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#_1">题意：</a></li>
-                
-            
             </ul>
         
     </li>
@@ -526,18 +523,15 @@
           <div role="main">
             <div class="section">
               
-                <p>/*
-71. Simplify Path</p>
-<p>Given an absolute path for a file (Unix-style), simplify it.</p>
-<p>For example,
+                <p><strong>71. Simplify Path</strong></p>
+<p>Given an absolute path for a file (Unix-style), simplify it.
+For example,
 path = "/home/", =&gt; "/home"
 path = "/a/./b/../../c/", =&gt; "/c"</p>
-<h1 id="_1">题意：</h1>
+<p><strong>题意：</strong></p>
 <pre><code>"."表示当前目录； ".."表示上级目录
 </code></pre>
-<p>*/</p>
-<pre><code>
-class Solution {
+<pre><code>class Solution {
     public String simplifyPath(String path) {
        ArrayDeque&lt;String&gt; stack = new ArrayDeque&lt;&gt;();
         String []sum = path.split(&quot;/&quot;);
