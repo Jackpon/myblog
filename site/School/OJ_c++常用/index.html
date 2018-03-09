@@ -145,54 +145,6 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#include">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_1">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_2">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_3">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_4">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_5">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_6">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_7">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_8">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_9">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_10">include</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#define-inttocharx-0x">define inttochar(x) ('0'+x)</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#define-chartointx-x-0">define chartoint(x) (x-'0')</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_11">include// 队列</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_12">include//栈</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#include_13">include </a></li>
-                
-            
             </ul>
         
     </li>
@@ -789,138 +741,161 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="include">include<iostream></h1>
-<h1 id="include_1">include<stdio.h></h1>
-<p>//#include<stdlib.h>
-//#include<string.h>
-//#include<string>
-//#include<math.h></p>
-<h1 id="include_2">include<algorithm></h1>
-<p>//#define inttochar(x) ('0'+x)
+                <pre><code>#include&lt;iostream&gt;
+#include&lt;stdio.h&gt;
+//#include&lt;stdlib.h&gt;
+//#include&lt;string.h&gt;
+//#include&lt;string&gt;
+//#include&lt;math.h&gt;
+#include&lt;algorithm&gt;
+//#define inttochar(x) ('0'+x)
 //#define chartoint(x) (x-'0')
-//#include<stack>
-//#include<queue></p>
-<h1 id="include_3">include<vector></h1>
-<p>using namespace std;
+//#include&lt;stack&gt;
+//#include&lt;queue&gt;
+#include&lt;vector&gt;
+using namespace std;
 bool comp(int &amp;a,int &amp;b){
   return a&gt;b;
 }
 int main()
-{</p>
-<p>return 0;
-}</p>
-<p>//获取一整行：
+{
+
+  return 0;
+}
+
+
+//获取一整行：
         string s;
-        getline(cin,s);</p>
-<p>//获取未知个数
-        while(scanf("&amp;d",&amp;n)!=EOF)
-//pow和sqrt在math库中</p>
-<p>char -&gt; int
+        getline(cin,s);
+
+//获取未知个数
+        while(scanf(&quot;&amp;d&quot;,&amp;n)!=EOF)
+//pow和sqrt在math库中
+
+char -&gt; int
     #define chartoint(x) (x-'0')
-    cout&lt;<chartonumber(c)+1;
-int -> char
+    cout&lt;&lt;chartonumber(c)+1;
+int -&gt; char
     #define inttochar(x) ('0'+x)
     cout&lt;&lt;(char)inttochar(2);
 //初始化数组B为0 or -1
 memset(B,0,sizeof(B));
 //字母大小写转换
 cout&lt;&lt;(char)toupper('a'); A
-cout&lt;&lt;(char)tolower('A'); a</p>
-<p>//头文件</p>
-<h1 id="include_4">include<iostream></h1>
-<h1 id="include_5">include<stdio.h></h1>
-<h1 id="include_6">include<stdlib.h></h1>
-<h1 id="include_7">include<string.h></h1>
-<h1 id="include_8">include<string></h1>
-<h1 id="include_9">include<math.h></h1>
-<h1 id="include_10">include<algorithm></h1>
-<p>//倒序
+cout&lt;&lt;(char)tolower('A'); a
+
+//头文件
+
+#include&lt;iostream&gt;
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;string.h&gt;
+#include&lt;string&gt;
+#include&lt;math.h&gt;
+#include&lt;algorithm&gt;
+  //倒序
   bool comp(int &amp;a,int &amp;b){
   return a&gt;b;
   }
-  sort(a,a+5,comp);</p>
-<h1 id="define-inttocharx-0x">define inttochar(x) ('0'+x)</h1>
-<h1 id="define-chartointx-x-0">define chartoint(x) (x-'0')</h1>
-<h1 id="include_11">include<queue>// 队列</h1>
-<h1 id="include_12">include<stack>//栈</h1>
-<p>using namespace std;</p>
-<p>//定义方式</p>
-<p>stack<int>  s;
-queue<int>  q;</p>
-<p>//栈：
-s.empty()//如果栈为空返回true，否则返回false<br />
-s.size()//返回栈中元素的个数<br />
-s.pop()//删除栈顶元素但不返回其值<br />
-s.top()//返回栈顶的元素，但不删除该元素<br />
-s.push(X)//在栈顶压入新元素 ，参数X为要压入的元素</p>
-<p>stack<int> s;
+  sort(a,a+5,comp);
+#define inttochar(x) ('0'+x)
+#define chartoint(x) (x-'0')
+#include&lt;queue&gt;// 队列
+#include&lt;stack&gt;//栈
+using namespace std;
+
+//定义方式
+
+stack&lt;int&gt;  s;
+queue&lt;int&gt;  q;
+
+//栈：
+s.empty()//如果栈为空返回true，否则返回false  
+s.size()//返回栈中元素的个数  
+s.pop()//删除栈顶元素但不返回其值  
+s.top()//返回栈顶的元素，但不删除该元素  
+s.push(X)//在栈顶压入新元素 ，参数X为要压入的元素
+
+stack&lt;int&gt; s;
 s.push(1);
 cout&lt;&lt;s.top();
 s.pop();
 if(s.empty())
-cout&lt;&lt;1;</p>
-<p>//队列：
-q.empty()// 如果队列为空返回true，否则返回false<br />
-q.size() // 返回队列中元素的个数<br />
-q.pop()  //删除队列首元素但不返回其值<br />
-q.front()  // 返回队首元素的值，但不删除该元素<br />
+cout&lt;&lt;1;
+
+//队列：
+q.empty()// 如果队列为空返回true，否则返回false  
+q.size() // 返回队列中元素的个数  
+q.pop()  //删除队列首元素但不返回其值  
+q.front()  // 返回队首元素的值，但不删除该元素  
 q.push(X) //在队尾压入新元素 ，X为要压入的元素
-q.back() //返回队列尾元素的值，但不删除该元素  </p>
-<p>queue<int> q;
+q.back() //返回队列尾元素的值，但不删除该元素  
+
+ queue&lt;int&gt; q;
  q.push(1);
  q.push(2);
- cout&lt;&lt;q.back();</p>
-<h1 id="include_13">include <vector></h1>
-<p>vector<int> a ;  //声明一个int型向量a
-vector<int> a(10) ;  //声明一个初始大小为10的向量
-vector<int> a(10, 1) ; //声明一个初始大小为10且初始值都为1的向量
-vector<int> b(a) ; //声明并用向量a初始化向量b
-vector<int> b(a.begin(), a.begin()+3) ; //将a向量中从第0个到第2个(共3个)作为向量b的初始值</p>
-<p>// 除此之外, 还可以直接使用数组来初始化向量:
+ cout&lt;&lt;q.back();
+
+#include &lt;vector&gt;
+
+vector&lt;int&gt; a ;  //声明一个int型向量a
+vector&lt;int&gt; a(10) ;  //声明一个初始大小为10的向量
+vector&lt;int&gt; a(10, 1) ; //声明一个初始大小为10且初始值都为1的向量
+vector&lt;int&gt; b(a) ; //声明并用向量a初始化向量b
+vector&lt;int&gt; b(a.begin(), a.begin()+3) ; //将a向量中从第0个到第2个(共3个)作为向量b的初始值
+
+// 除此之外, 还可以直接使用数组来初始化向量:
 int n[] = {1, 2, 3, 4, 5} ;
-vector<int> a(n, n+5) ;  //将数组n的前5个元素作为向量a的初值</p>
-<p>元素的输入和访问可以像操作普通的数组那样, 用cin&gt;&gt;进行输入,
-cout&lt;&lt;a[n]这样进行输出:</p>
-<p>尾插元素： V.push_back(a[i]);
+vector&lt;int&gt; a(n, n+5) ;  //将数组n的前5个元素作为向量a的初值
+
+元素的输入和访问可以像操作普通的数组那样, 用cin&gt;&gt;进行输入,
+cout&lt;&lt;a[n]这样进行输出:
+
+尾插元素： V.push_back(a[i]);
 插入元素：  V.insert(V.begin()+i,a); //在第i+1个元素前面插入a
 删除元素：vec.erase(vec.begin()+i); //删除第i+1个元素
 求vector的长度：V.size();
 a.empty() //判断向量是否为空
 交换 - swap
         b.swap(a) ;//a向量与b向量进行交换
-sort(V.begin(),V.end());//排序方法</p>
-<p>vector<int> a;
+sort(V.begin(),V.end());//排序方法
+
+vector&lt;int&gt; a;
   int value;
-  while(scanf("%d",&amp;value)){
+  while(scanf(&quot;%d&quot;,&amp;value)){
     if(value==-1)
       break;
     a.insert(a.begin(),value);
   }
   //两种遍历方式，既可以像数组一样
-  for(int i=0;i<a.size();++i){
+  for(int i=0;i&lt;a.size();++i){
     if(i==3)
       a[i]=3;
   }
-  vector<int>::iterator it;
+  vector&lt;int&gt;::iterator it;
   for(it=a.begin();it!=a.end();it++){
     cout&lt;&lt;*it&lt;&lt;endl;
-  }</p>
-<p>//二维向量
-vector&lt; vector<int> &gt; b(10, vector<int>(5));
+  }
+
+
+//二维向量
+vector&lt; vector&lt;int&gt; &gt; b(10, vector&lt;int&gt;(5));
  //创建一个10*5的int型二维向量
-vector&lt; vector<int> &gt; b(10, vector<int>(5, 0)) ;
+vector&lt; vector&lt;int&gt; &gt; b(10, vector&lt;int&gt;(5, 0)) ;
    //对部分数据进行输入
   cin&gt;&gt;b[1][1] ;
   cin&gt;&gt;b[2][2] ;
-  cin&gt;&gt;b[3][3];</p>
-<p>//全部输出
+  cin&gt;&gt;b[3][3];
+
+   //全部输出
    int m, n ;
    for(m=0; m&lt;b.size(); m++)           //b.size()获取行向量的大小
    {
        for(n=0; n&lt;b[m].size(); n++)    //获取向量中具体每个向量的大小
-           cout&lt;&lt;b[m][n]&lt;&lt;" " ;
-       cout&lt;&lt;"\n" ;
-  }</p>
+           cout&lt;&lt;b[m][n]&lt;&lt;&quot; &quot; ;
+       cout&lt;&lt;&quot;\n&quot; ;
+  }
+</code></pre>
               
             </div>
           </div>
