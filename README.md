@@ -27,4 +27,4 @@ _posts：这里面装的就是你的博文啦，记住，要用markdown语法写
     该页面文档是采用mkdocs编译生成的，使用很简单，你只需几个命令就可以
     生成自己的静态文件，具有搜索功能，具体操作见官网。
 
-###    MkDocs 中文文档（http://markdown-docs-zh.readthedocs.io/zh_CN/latest/）
+###    MkDocs 中文文档（ http://markdown-docs-zh.readthedocs.io/zh_CN/latest/ ）
