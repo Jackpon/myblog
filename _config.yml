@@ -119,8 +119,8 @@ menu:
   home: /
   about: /about/
   categories: /categories/
+  tags: /tags/
   archives: /archives/
-  #tags: /tags/
   #search: 
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -137,9 +137,9 @@ menu_icons:
   home: home
   about: user
   categories: th
+  tags: tags
   archives: archive
   #schedule: calendar
-  #tags: tags
   #sitemap: sitemap
   #commonweal: heartbeat
 
