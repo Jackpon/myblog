@@ -217,8 +217,8 @@ social:
   #LinkLabel: Link
   GitHub: https://github.com/Jackpon
   ZhiHu: https://www.zhihu.com/people/Jackpon/activities
-  404公益@宝贝回家: ./404.html
-  LeetCode: ./site/
+  404公益@宝贝回家: https://jackpon.github.io/404.html
+  LeetCode: https://jackpon.github.io/site/
   
 # Social Links Icons
 # Icon Mapping:
