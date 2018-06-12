@@ -17,6 +17,6 @@ updated: 2018-02-24
 
 这首是关于音阶的学习。
 
-<img src="../assets//blog_images/小蜜蜂.png" width="350px" height="200px"/>
+<img src="{{ site.url }}/assets//blog_images/小蜜蜂.png" width="350px" height="200px"/>
 
 - [ ] ​
