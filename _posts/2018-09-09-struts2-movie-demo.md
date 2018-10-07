@@ -62,12 +62,14 @@ updated: 2018-09-09
 
  - **项目结构**
  	![在这里插入图片描述](https://img-blog.csdn.net/20180925161625419)
+
  	action、javabean、数据库DB、拦截器interceptors、服务service要单独建包，需要注意的是构建数据库的语句要写在文件夹mysql里，方便他人使用，引用外部的框架放在WEB-INF>lib;
  - **构建Model层**
  	model也称bean，在此demo中，我们只需要构建用户User和电影Movies，由于在注册时，有确认密码这项，我们还需要建立UserDTO，它的作用就是User的爸爸（UserDTO包含User），User就可以从UserDTO获取所需要的属性值；由于项目比较小，我们可以同时建立数据库，bean与数据库的名字最好一致；
  - **数据库服务**
  	DB.java用于启动mysql服务
-```
+
+```java
 package com.jackpon.DB;
 
 import java.sql.Connection;
@@ -129,9 +131,10 @@ public class DB implements DBConfig{
 }
 
 ```
+
 调用DB服务，以UserService.add()为例
 
-```
+```java
 public String add(User user) {
 	 	Connection conn= (Connection) DB.createConn();
 		String sql = "insert into user(name,password) values (?, ?)";
@@ -153,7 +156,7 @@ public String add(User user) {
 
  - **拦截器**
 
-```
+```java
 package com.jackpon.interceptors;
 
 import java.util.Map;
@@ -178,4 +181,5 @@ public class loginStatusInterceptor extends AbstractInterceptor{
 
 }
 ```
+
 [movies](https://github.com/Jackpon/Struts2Demos/tree/master/movies)
