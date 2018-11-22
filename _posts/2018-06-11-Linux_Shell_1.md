@@ -42,13 +42,11 @@ updated: 2018-06-11
   echo "$num"
   echo '$num'
   ```
-
   写完上面的程序，基本上也对shell有个印象，接下来就跟学习其他语言差不多了，让我们来了解shell 的基本知识。
 
 - **基础**
 
 - 定义一个*变量*：
-
   ```shell
   num=1	#跟python很类似，直接定义就行，不需要写类型，注意“=”
   declare -i num	#当然也可以用这种方式
@@ -65,7 +63,6 @@ updated: 2018-06-11
   
 
 - *if语句*
-
   ```shell
   a=1
   b=2
@@ -90,13 +87,11 @@ updated: 2018-06-11
   -eq #equal 			=
   -ne #not equal 		!=
   ```
-
   可以看到，样式跟其他语言很不一样，“(  )”改成“[  ]”；而且两边还要有空格隔开；
   if 后要紧随 then，结束要用 fi ;
   
 
 - *for 和 while 循环*
-
 ```shell
 a=(1 2 3)
 for i in ${a[*]}
@@ -111,13 +106,11 @@ while [ $i -le 5 ]
 		let i++
 	done
 ```
-
 可以看到，两个循环语句都始于do，终于done；让数字做加减可以用 let 语句；
 
 
 
 - *数学运算*
-
 ```shell
 a=1
 b=2
@@ -131,7 +124,6 @@ c=$(($a+$b))	#这些方法只能用于整数，不能用于浮点数
 
 
 - *重定向*
-
 ```shell
 echo "Hello world" > 1.txt		#将字符串覆盖写入到文件
 echo "Who are you?" >> 1.txt	#将字符串追加写入到文件
@@ -141,7 +133,6 @@ cat 1.txt 2.txt > 3.txt		    #读取文件1和2的内容，并将其写入到文
 
 
 - *别名*
-
 ```shell
 alias install='sudo apt install '	#为命令起别名，下次直接install就行了
 ```
@@ -149,7 +140,6 @@ alias install='sudo apt install '	#为命令起别名，下次直接install就�
 
 
 - *时间*
-
 ```shell
 date		#直接获取时间
 date +%s 	#获取纪元时
@@ -172,7 +162,6 @@ echo "Time: $diff s"
 
 
 - *函数*
-
 ```shell
 hello(){
     echo "hello"
@@ -184,7 +173,6 @@ hello(){
 }
 hello Jack BeiJing
 ```
-
 是的，在shell中 ‘$1’ 就是代表第一个参数，以此类推；shell 也可以编写递归函数，其中最典型的案例就是Fork炸弹，其本质其实就是调用本身，几何增长地产生进程，最终导致服务器崩溃！所以不要轻易尝试。
 
 ---
@@ -194,13 +182,10 @@ hello Jack BeiJing
 - **拓展应用**
 
 - *Fork炸弹*
-
 ```shell
 :(){ :|:& };:		#史上最简的Fork炸弹就是这样啦
 ```
-
 看起来很像外星文，其实只要这样分解，就很容易看得懂了；
-
 ```shell
 #调用函数本身，然后利用管道调用一个新进程，&就是我们linux用于将进程放在后台的操作
 :(){
@@ -208,18 +193,13 @@ hello Jack BeiJing
 };
 :
 ```
-
 防范其实也简单，因为该程序其实就是产生大量进程导致系统崩溃，那么我们只需要限制最大进程数就行。
-
 ```shell
 ulimit -u 50 	#设置最大进程数为 50
 #当然还可以在配置 /etc/security/limits.conf 来限制最大进程数
 ```
 
-
-
 - *下载文件*
-
 ```shell
 #!/bin/bash
 repeat(){
@@ -229,11 +209,8 @@ repeat(){
 	done
 }
 ```
-
 由于true是作为 /bin 的一个二进制文件来实现的，这就意味着每执行一次，就要产生一个进程；
-
 所以我们可以改为shell内建的 “ : ” ；我们还应该添加延时操作，不然服务器会任务你在发送垃圾信息，可能把你拉黑。
-
 ```shell
 #最终版
 repeat(){ while :; do $@ && return ; sleep 30; done }
