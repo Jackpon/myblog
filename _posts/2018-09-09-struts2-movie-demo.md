@@ -1,21 +1,20 @@
 ---
-title: Struts2入门 > 影视网demo
+title: Struts2+Hibernate> 影视网demo
 categories: 
-- Struts2
+- SSH
 tags:
-- Struts2
+- SSH
 updated: 2018-09-09
 ---
-
-​	
+	
 
 ###  影视网demo 
 
  - **目的**
- 	以项目为驱动，学习Struts2的基本知识点。
+ 	以项目为驱动，学习Struts2+Hibernate的基本知识点。
  - **项目介绍**
- 	影视网demo网站，前端布局boostrap+js，后端Struts2，数据库mysql+redis；
- 	实现功能：用户登录注册、我喜欢；
+ 	影视网demo网站，前端布局boostrap+js，后端Struts2，持久化层Hibernate、数据库mysql+redis；
+ 	实现功能：用户登录注册、我喜欢、搜索、分页、layui列表；
  	主要知识点：拦截器，比如用户在未登录状态下点击“喜欢”，将会被拦截请求，通过判断来进一步后续操作。
  	![在这里插入图片描述](https://img-blog.csdn.net/20180925160004409)
  
@@ -62,14 +61,12 @@ updated: 2018-09-09
 
  - **项目结构**
  	![在这里插入图片描述](https://img-blog.csdn.net/20180925161625419)
-
  	action、javabean、数据库DB、拦截器interceptors、服务service要单独建包，需要注意的是构建数据库的语句要写在文件夹mysql里，方便他人使用，引用外部的框架放在WEB-INF>lib;
  - **构建Model层**
  	model也称bean，在此demo中，我们只需要构建用户User和电影Movies，由于在注册时，有确认密码这项，我们还需要建立UserDTO，它的作用就是User的爸爸（UserDTO包含User），User就可以从UserDTO获取所需要的属性值；由于项目比较小，我们可以同时建立数据库，bean与数据库的名字最好一致；
  - **数据库服务**
  	DB.java用于启动mysql服务
-
-```java
+```
 package com.jackpon.DB;
 
 import java.sql.Connection;
@@ -131,10 +128,9 @@ public class DB implements DBConfig{
 }
 
 ```
-
 调用DB服务，以UserService.add()为例
 
-```java
+```
 public String add(User user) {
 	 	Connection conn= (Connection) DB.createConn();
 		String sql = "insert into user(name,password) values (?, ?)";
@@ -156,7 +152,7 @@ public String add(User user) {
 
  - **拦截器**
 
-```java
+```
 package com.jackpon.interceptors;
 
 import java.util.Map;
@@ -181,5 +177,4 @@ public class loginStatusInterceptor extends AbstractInterceptor{
 
 }
 ```
-
 [movies](https://github.com/Jackpon/Struts2Demos/tree/master/movies)
