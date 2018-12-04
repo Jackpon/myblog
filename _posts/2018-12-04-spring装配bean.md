@@ -13,11 +13,13 @@ updated: 2018-12-04
 - **三种主要的装配机制**
 
 提供了三种主要的装配机制：
-
+```
     - 在XML中进行显式配置；
     - 在Java中进行显式配置；
     - 隐式的bean发现机制和自动装配；
+```
 ---
+
 - **自动化装配**
 
 Spring从两个角度来实现自动化装配：
@@ -94,6 +96,7 @@ spring为我们提供了两种方式：
 @Autowired注解。
 
     如果现在歌手说，你叫我唱歌，怎么不给我麦克风啊？让我们将上面的实验添加个麦克风类；
+
 ```java
 //建立MicroPhone类
 @Component
@@ -118,9 +121,11 @@ public class Person {
 @Autowired可以在变量、构造器、setter()上注解
 
 ---
+
 - **在XML中进行显式配置**
 
 XML显式配置有两种方式，构造器和setter();
+
 ```java
 //建立有名字和年龄的Person类
 public class Person {
@@ -174,6 +179,7 @@ public class Person {
 //name是方法中参数名字，ref是注入的对象
 <beans default-lazy-init="true"></beans>
 ```
+
 `lazy-init="true"`表示延时加载，只有用到时才会加载，默认是false
 
 
