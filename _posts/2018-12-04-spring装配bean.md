@@ -172,7 +172,8 @@ public class Person {
 </beans>
 
 //name是方法中参数名字，ref是注入的对象
-
+<beans default-lazy-init="true"></beans>
 ```
+`lazy-init="true"`表示延时加载，只有用到时才会加载，默认是false
 
 
