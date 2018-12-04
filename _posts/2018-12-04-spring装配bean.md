@@ -171,6 +171,7 @@ public class Person {
    </bean>
 </beans>
 
+//name是方法中参数名字，ref是注入的对象
 
 ```
 
