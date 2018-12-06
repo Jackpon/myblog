@@ -8,6 +8,7 @@ updated: 2018-11-25
 ---
 
 - 一对一单向外键关联
+
 ```java
 @Entity
 public class Husband {
@@ -31,6 +32,7 @@ public class Husband {
 
 ```
 - 一对一双向外键关联
+
 ```java
 @Entity
 public class Husband {
@@ -80,6 +82,7 @@ public class Wife {
 
 
 - 一对多单向关联
+
 ```java
 @Entity
 public class Husband {
@@ -105,6 +108,7 @@ public class Husband {
 - 多对一单向关联
 
 在多的一方配置@ManyToOne
+
 ```java
 @Entity
 public class Wife {
@@ -134,6 +138,7 @@ public class Wife {
 - 组件映射
 
  @Embedded
+ 
 ```java
 @Entity
 public class Husband {
