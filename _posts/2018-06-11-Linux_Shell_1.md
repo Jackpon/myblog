@@ -92,6 +92,7 @@ updated: 2018-06-11
   
 
 - *for 和 while 循环*
+
 ```shell
 a=(1 2 3)
 for i in ${a[*]}
@@ -106,11 +107,13 @@ while [ $i -le 5 ]
 		let i++
 	done
 ```
+
 可以看到，两个循环语句都始于do，终于done；让数字做加减可以用 let 语句；
 
 
 
 - *数学运算*
+
 ```shell
 a=1
 b=2
