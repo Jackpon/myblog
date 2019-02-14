@@ -140,6 +140,7 @@ alias install='sudo apt install '	#为命令起别名，下次直接install就�
 
 
 - *时间*
+
 ```shell
 date		#直接获取时间
 date +%s 	#获取纪元时
@@ -156,10 +157,7 @@ done
 end=$(date +%s)
 diff=$(($end-$start))
 echo "Time: $diff s"
-
 ```
-
-
 
 - *函数*
 ```shell
