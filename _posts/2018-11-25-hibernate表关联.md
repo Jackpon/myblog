@@ -9,7 +9,7 @@ updated: 2018-11-25
 
 - **一对一单向外键关联**
 
-```
+```java
 @Entity
 public class Husband {
 	private int id;
@@ -32,7 +32,7 @@ public class Husband {
 ```
 - **一对一双向外键关联**
 
-```
+```java
 @Entity
 public class Husband {
 	private int id;
@@ -80,7 +80,7 @@ public class Wife {
 
 - **一对多单向关联**
 
-```
+```java
 @Entity
 public class Husband {
 	private int id;
@@ -105,7 +105,7 @@ public class Husband {
 
 在多的一方配置@ManyToOne
 
-```
+```java
 @Entity
 public class Wife {
 	private Husband husband;
@@ -135,7 +135,7 @@ public class Wife {
 
  @Embedded
  
-```
+```java
 @Entity
 public class Husband {
 	private int id;
