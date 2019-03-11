@@ -1,5 +1,5 @@
 ---
-title: Struts2+Hibernate> 影视网demo
+title: S2SH框架搭建影视网demo
 categories: 
 - SSH
 tags:
@@ -8,12 +8,12 @@ updated: 2018-09-09
 ---
 	
 
-###  影视网demo 
+###  S2SH框架搭建影视网demo 
 
  - **目的**
- 	以项目为驱动，学习Struts2+Hibernate的基本知识点。
+ 	以项目为驱动，学习Struts2+Spring+Hibernate的基本知识点。
  - **项目介绍**
- 	影视网demo网站，前端布局boostrap+js，后端Struts2，持久化层Hibernate、数据库mysql+redis；
+ 	影视网demo网站，前端布局boostrap+js，后端Struts2+Spring，持久化层Hibernate、数据库mysql+redis；
  	实现功能：用户登录注册、我喜欢、搜索、分页、layui列表；
  	主要知识点：拦截器，比如用户在未登录状态下点击“喜欢”，将会被拦截请求，通过判断来进一步后续操作。
  	![在这里插入图片描述](https://img-blog.csdn.net/20180925160004409)
