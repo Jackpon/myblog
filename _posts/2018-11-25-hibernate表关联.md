@@ -7,8 +7,8 @@ tags:
 updated: 2018-11-25
 ---
 
-- 一对一单向外键关联
-
+- **一对一单向外键关联**
+	
 ```java
 @Entity
 public class Husband {
@@ -29,9 +29,8 @@ public class Husband {
 		return wife;
 	}
 }
-
 ```
-- 一对一双向外键关联
+- **一对一双向外键关联**
 
 ```java
 @Entity
@@ -54,7 +53,6 @@ public class Husband {
 	}
 }
 
----
 @Entity
 public class Wife {
 	private Husband husband;
@@ -73,15 +71,14 @@ public class Wife {
 		return name;
 	}
 }
-
 ```
-- 小结
+
+- **小结**
 一对一的单向和双向关联在数据库的建表是一样的，其主要区别在逻辑不一样，例如单向只能通过A找到B，而双向则A、B可以相互找到；实现也不一样，单向只需在其中一个设置@OneToOne，而双向则需要在另一个设置@OneToOne(mappedBy="xx") 
 
 ---
 
-
-- 一对多单向关联
+- **一对多单向关联**
 
 ```java
 @Entity
@@ -103,9 +100,8 @@ public class Husband {
 		return wifeGroup;
 	}
 }
-
 ```
-- 多对一单向关联
+- **多对一单向关联**
 
 在多的一方配置@ManyToOne
 
@@ -128,14 +124,14 @@ public class Wife {
 		return name;
 	}
 }
-
 ```
-- 小结
+- **小结**
 
 	同理，两者在数据库建的表一致，不同的是逻辑。一对多、多对一，都会在多的一方建立字段。
 
 ---
-- 组件映射
+
+- **组件映射**
 
  @Embedded
  
