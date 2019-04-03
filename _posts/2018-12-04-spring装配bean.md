@@ -7,26 +7,22 @@ tags:
 updated: 2018-12-04
 ---
 
-- **Bean为什么要装配 ？**
+#### Bean为什么要装配 ？
+	我的理解是，不装配bean，每次都要实例化（new）对象，很显然与控制反转（IOC）的设计模式不符，
+	装配bean能够使对象抽象出来。
 
-我的理解是，不装配bean，每次都要实例化（new）对象，很显然与控制反转（IOC）的设计模式不符，装配bean能够使对象抽象出来。
-
-- **三种主要的装配机制**
-
-提供了三种主要的装配机制：
-
-```
+#### 三种主要的装配机制
     - 在XML中进行显式配置；
     - 在Java中进行显式配置；
     - 隐式的bean发现机制和自动装配；
-```
+
 ---
 
-- **自动化装配**
-Spring从两个角度来实现自动化装配：
-组件扫描（component scanning）：Spring会自动发现应用上下文
-中所创建的bean。
-自动装配（autowiring）：Spring自动满足bean之间的依赖。
+#### 自动化装配
+	Spring从两个角度来实现自动化装配：
+	组件扫描（component scanning）：Spring会自动发现应用上下文
+	中所创建的bean。
+	自动装配（autowiring）：Spring自动满足bean之间的依赖。
 
 ```java
 /*
@@ -53,7 +49,8 @@ public class PersonConfig {
 }
 //xml配置
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+					"http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
   <bean id="person" class="po.Person">
   </bean>
@@ -65,7 +62,8 @@ public class PersonTest {
 	@Test
 	public void test() {
 	//1. 声明Spring上下文，采用java配置类
-        ApplicationContext ac = new AnnotationConfigApplicationContext(PersonConfig.class);
+        ApplicationContext ac = 
+					new AnnotationConfigApplicationContext(PersonConfig.class);
         //2. 声明Spring应用上下文，采用xml配置
         //ApplicationContext ac = new ClassPathXmlApplicationContext("Person.xml");
         //通过Spring上下文获取Bean，在这里Spring通过自动扫描发现了Person的实现，并自动创建bean。
@@ -89,13 +87,13 @@ spring为我们提供了两种方式：
 @ComponentScan(basePackages={})
 ```
 
-- **通过为bean添加注解实现自动装配**
+#### 通过为bean添加注解实现自动装配
     简单来说，自动装配就是让Spring自动满足bean依赖的一种方法，在
-满足依赖的过程中，会在Spring应用上下文中寻找匹配某个bean需求
-的其他bean。为了声明要进行自动装配，我们可以借助Spring的
-@Autowired注解。
+	满足依赖的过程中，会在Spring应用上下文中寻找匹配某个bean需求
+	的其他bean。为了声明要进行自动装配，我们可以借助Spring的
+	@Autowired注解。
 
-    如果现在歌手说，你叫我唱歌，怎么不给我麦克风啊？让我们将上面的实验添加个麦克风类；
+如果现在歌手说，你叫我唱歌，怎么不给我麦克风啊？让我们将上面的实验添加个麦克风类；
 
 ```java
 //建立MicroPhone类
@@ -121,8 +119,7 @@ public class Person {
 
 ---
 
-- **在XML中进行显式配置**
-
+#### 在XML中进行显式配置
 XML显式配置有两种方式，构造器和setter();
 
 ```java
@@ -150,7 +147,8 @@ public class Person {
 
 //针对构造器和setter()的xml配置如下：
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+			"http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
 <!-- setter -->
   <!-- <bean id="person" class="po.Person">
