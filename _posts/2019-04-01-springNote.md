@@ -37,7 +37,8 @@ Webapp的Action不是线程安全的，要求在多线程环境下必须是一�
     UserDAO userDAO = new UserDAOImpl();
     LogInterceptor li = new LogInterceptor();
     li.setTarget(userDAO);
-    UserDAO userDAOProxy = (UserDAO)Proxy.newProxyInstance(userDAO.getClass().getClassLoader(), userDAO.getClass().getInterfaces(), li);
+    UserDAO userDAOProxy = (UserDAO)Proxy.newProxyInstance(
+        userDAO.getClass().getClassLoader(), userDAO.getClass().getInterfaces(), li);
     System.out.println(userDAOProxy.getClass());
     userDAOProxy.delete();
 ```
