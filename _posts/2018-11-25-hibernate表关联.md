@@ -1,9 +1,9 @@
 ---
 title: Hibernate相关
 categories: 
-- SSH
+- 数据库
 tags:
-- SSH
+- Hibernat
 updated: 2018-11-25
 ---
 

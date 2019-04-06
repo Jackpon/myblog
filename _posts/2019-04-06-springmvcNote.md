@@ -3,7 +3,7 @@ title: springMVC入门就是这么简单
 categories: 
 - spring
 tags:
-- spring
+- springMVC
 updated: 2019-04-06
 ---
 
@@ -11,11 +11,14 @@ SSM就是SpringMVC-Spring-Mybatis的简称，是web-service-dao的典型代表�
 
 ### 何为SpringMVC
     SpringMVC的作用基本就是Struts2的作用，也就是控制器；
+
 ### SpringMVC如何体现MVC
     Model-View-controller；
     在struts2中，service、dao就是Model，action就是controller；
     而在springMVC，controller就是controller；
+
 ### 理解SpringMVC原理
+
 ![]({{ site.url }}/assets/blog_images/SpringMVC工作原理.jpg)
 
 ### 入门配置
